@@ -21,40 +21,23 @@ npm install
 Once the setup is complete, you can start the app using any of the following commands depending on your target platform:
 
 ```bash
-npm run start         # Starts the development server
-npm run android       # Runs the app on Android
-npm run ios           # Runs the app on iOS
-npm run web           # Runs the app in a web browser
-npm run lint          # Runs the linter to check for code quality
+npm install         #installs dependencies
+npm run dev         # Starts the web app
 ```
 
-The initial screen displays a welcome message. The main component responsible for rendering this view can be found in `app/index.tsx`:
-
-```javascript
-import { Text, View } from "react-native";
-
-export default function Index() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Welcome</Text>
-    </View>
-  );
-}
-```
 
 ## Tech Stack
 
-- **Front-end Framework**: React Native
-- **Routing**: Expo Router
-- **Styles**: Tailwind CSS via NativeWind
+- **Front-end Framework**: Next JS
+- **Styles**: Tailwind CSS 
 - **Navigation**: React Navigation
-- **Development Environment**: Expo
+
 
 ## Directory Structure
 
 - `app/`: Contains application layout and main components
 - `assets/`: Holds images and icons used in the application
-- `babel.config.js`: Configuration for Babel
+
 - `package.json`: Contains project metadata and dependencies
 
 ## Contributing
