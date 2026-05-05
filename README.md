@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# Movie App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Stars](https://img.shields.io/github/stars/JesseJohn7/Movie-app) ![Forks](https://img.shields.io/github/forks/JesseJohn7/Movie-app) ![Last Commit](https://img.shields.io/github/last-commit/JesseJohn7/Movie-app)
 
-## Get started
+## Description
 
-1. Install dependencies
+The Movie App is a Web application built with NextJs and typescript that helps people get access too movies 
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+To get started with the Movie App, clone the repository and install the necessary dependencies. You can do this using the following commands:
 
 ```bash
-npm run reset-project
+git clone https://github.com/JesseJohn7/Movie-app.git
+cd Movie-app
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
 
-## Learn more
+Once the setup is complete, you can start the app using any of the following commands depending on your target platform:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm run start         # Starts the development server
+npm run android       # Runs the app on Android
+npm run ios           # Runs the app on iOS
+npm run web           # Runs the app in a web browser
+npm run lint          # Runs the linter to check for code quality
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The initial screen displays a welcome message. The main component responsible for rendering this view can be found in `app/index.tsx`:
 
-## Join the community
+```javascript
+import { Text, View } from "react-native";
 
-Join our community of developers creating universal apps.
+export default function Index() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Welcome</Text>
+    </View>
+  );
+}
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Tech Stack
+
+- **Front-end Framework**: React Native
+- **Routing**: Expo Router
+- **Styles**: Tailwind CSS via NativeWind
+- **Navigation**: React Navigation
+- **Development Environment**: Expo
+
+## Directory Structure
+
+- `app/`: Contains application layout and main components
+- `assets/`: Holds images and icons used in the application
+- `babel.config.js`: Configuration for Babel
+- `package.json`: Contains project metadata and dependencies
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss enhancements and features.
+
+## License
+
+This project does not have a specified license. Please consider this when contributing or using the project.
